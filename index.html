@@ -1,0 +1,265 @@
+<!-- Built at The Upskilling Labs — GitHub 2.0 Workshop -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="The personal website of Kasim Hasan, a Strategy & Operations professional."
+    />
+    <title>Kasim Hasan — Strategy & Operations</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --primary: #16324f;
+        --secondary: #c18f59;
+        --background: #f4f1ea;
+        --surface: #ffffff;
+        --surface-tint: #eee9df;
+        --text: #2d2d2d;
+        --muted: #66717a;
+        --line: #ddd6ca;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        background: var(--background);
+      }
+
+      body {
+        margin: 0;
+        color: var(--text);
+        background: var(--background);
+        font-family: "Manrope", Arial, sans-serif;
+        font-size: 1rem;
+        line-height: 1.75;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      .page {
+        width: min(100% - 3rem, 800px);
+        margin: 0 auto;
+      }
+
+      header {
+        padding: clamp(5.5rem, 16vw, 10.5rem) 0 clamp(4rem, 11vw, 7.5rem);
+      }
+
+      .field {
+        margin: 0 0 1.5rem;
+        color: var(--secondary);
+        font-size: 0.75rem;
+        font-weight: 700;
+        letter-spacing: 0.16em;
+        line-height: 1.4;
+        text-transform: uppercase;
+      }
+
+      h1,
+      h2,
+      p {
+        margin-top: 0;
+      }
+
+      h1 {
+        max-width: 760px;
+        margin-bottom: 1.35rem;
+        color: var(--primary);
+        font-size: clamp(3.2rem, 10vw, 6.7rem);
+        font-weight: 700;
+        letter-spacing: -0.075em;
+        line-height: 0.98;
+      }
+
+      .tagline {
+        max-width: 610px;
+        margin-bottom: 0;
+        color: var(--primary);
+        font-size: clamp(1.25rem, 3vw, 1.8rem);
+        font-weight: 500;
+        letter-spacing: -0.03em;
+        line-height: 1.35;
+      }
+
+      main {
+        border-top: 1px solid var(--line);
+      }
+
+      section {
+        padding: clamp(3.75rem, 9vw, 6rem) 0;
+      }
+
+      section + section {
+        border-top: 1px solid var(--line);
+      }
+
+      .section-heading {
+        margin-bottom: 1.75rem;
+        color: var(--primary);
+        font-size: 0.75rem;
+        font-weight: 700;
+        letter-spacing: 0.14em;
+        line-height: 1.4;
+        text-transform: uppercase;
+      }
+
+      .about-copy {
+        max-width: 680px;
+        margin-bottom: 0;
+        font-size: clamp(1.05rem, 2.1vw, 1.25rem);
+        letter-spacing: -0.012em;
+        line-height: 1.8;
+      }
+
+      .interest-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+        gap: 1rem;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .interest-card {
+        min-height: 100%;
+        padding: 1.5rem 1.35rem 1.6rem;
+        border: 1px solid var(--line);
+        border-top: 3px solid var(--secondary);
+        background: var(--surface);
+      }
+
+      .interest-number {
+        display: block;
+        margin-bottom: 2.4rem;
+        color: var(--secondary);
+        font-size: 0.75rem;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+      }
+
+      .interest-card p {
+        max-width: 18rem;
+        margin-bottom: 0;
+        color: var(--primary);
+        font-size: 1rem;
+        font-weight: 600;
+        letter-spacing: -0.02em;
+        line-height: 1.45;
+      }
+
+      footer {
+        padding: 2rem 0 3rem;
+        border-top: 1px solid var(--line);
+        background: var(--surface-tint);
+      }
+
+      .footer-inner {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 0.75rem 2rem;
+      }
+
+      .footer-mark,
+      .footer-note {
+        margin: 0;
+        font-size: 0.78rem;
+        line-height: 1.5;
+      }
+
+      .footer-mark {
+        color: var(--primary);
+        font-weight: 700;
+        letter-spacing: 0.04em;
+      }
+
+      .footer-note {
+        color: var(--muted);
+      }
+
+      @media (max-width: 520px) {
+        .page {
+          width: min(100% - 2rem, 800px);
+        }
+
+        header {
+          padding-top: 4.5rem;
+        }
+
+        .interest-list {
+          grid-template-columns: 1fr;
+        }
+
+        .interest-number {
+          margin-bottom: 1.6rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <p class="field">Strategy &amp; Operations</p>
+        <h1>Kasim Hasan</h1>
+        <p class="tagline">
+          Turning complex operations into clear, high-impact outcomes.
+        </p>
+      </header>
+
+      <main>
+        <section aria-labelledby="about-heading">
+          <h2 class="section-heading" id="about-heading">About</h2>
+          <p class="about-copy">
+            Strategic Corporate Strategy &amp; Operations professional with
+            experience across federal government consulting and automotive
+            industries. Proven track record in leading enterprise
+            transformations, streamlining operations, and driving
+            cross-functional programs that deliver measurable impact. Key
+            achievements include slashing visa processing times, delivering
+            multimillion-dollar modernization programs, centralizing L&amp;D
+            for thousands of employees, and scaling an ERG from 12 to 850+
+            members. Skilled in strategic planning, process optimization, KPI
+            development, stakeholder engagement, and executive reporting.
+          </p>
+        </section>
+
+        <section aria-labelledby="interest-heading">
+          <h2 class="section-heading" id="interest-heading">
+            What I'm Interested in Building with The Upskilling Labs
+          </h2>
+          <ol class="interest-list">
+            <li class="interest-card">
+              <span class="interest-number">01</span>
+              <p>Learning to ship real projects with a team</p>
+            </li>
+            <li class="interest-card">
+              <span class="interest-number">02</span>
+              <p>Figuring out how AI fits into my workflow</p>
+            </li>
+            <li class="interest-card">
+              <span class="interest-number">03</span>
+              <p>My neighborhood's community garden</p>
+            </li>
+          </ol>
+        </section>
+      </main>
+
+      <footer>
+        <div class="footer-inner">
+          <p class="footer-mark">Kasim Hasan</p>
+          <p class="footer-note">Built at The Upskilling Labs</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

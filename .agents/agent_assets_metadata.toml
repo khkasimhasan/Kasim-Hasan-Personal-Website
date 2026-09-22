@@ -1,0 +1,16 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "LXaiYSP2Nis24wjPTbFPY"
+uri = "file://index.html"
+type = "html"
+title = "Kasim Hasan Personal Website"
+description = "A single-file personal website built to open directly in any browser. Includes inline CSS, responsive layout, and no JavaScript or framework dependencies."
+logical_id = "f6cce44f-02cd-4957-a940-843954cae3a0"
+content_hash = "sha256:bfa4c0dd649990acf29ce9159383126ed4d435474f33db2baa7ed72dead40021"
+size = 6963
+mtime_ms = 1790111305834
+storage_uri = "gcs://replit-rams-assets-worf/rams/assets/repl:2b9b2330-e751-4ece-bb7c-1612eb3e05fc/f6cce44f-02cd-4957-a940-843954cae3a0/f5b86d9d-8a15-4e1d-952b-d54ec91746b2"
+storage_version_token = "1790111317189266"
+content_type = "text/html"
